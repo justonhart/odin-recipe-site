@@ -2,24 +2,43 @@ html, body{
 	height: 100%;
 	margin: 0;
 	padding: 0;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 body {
-	background-color:#1a1a1a;
-	color: whitesmoke;
+	background-color:#262626;
+	color: #d2d2d2;
+	display: flex;
+	flex-direction: column;
+	justify-content:space-between;
 }
 
-header{
-	background-color: black;
+header, footer{
+	background-color:#1a1a1a ;
+	user-select: none;
 }
 
 header nav{
 	display: inline-block;
-	color: whitesmoke;
 	padding: 0.5rem;
 	font-size: 125%;
 }
 
+nav:hover{
+	text-decoration: underline;
+	user-select: none;
+}
+
+footer{
+	padding: 0.5rem;
+	text-align: center;
+	font-family: monospace;
+	font-size: 85%;
+	letter-spacing: 2px;
+}
+
 #content{
+	flex: 1;
 	padding: 10px 10px;
 }
+
