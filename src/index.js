@@ -5,7 +5,7 @@ import renderAbout from './aboutModule.js';
 
 const content = document.getElementById('content');
 
-renderMenu(content);
+renderHome(content);
 
 document.getElementById('home').addEventListener('click', () => {
 	renderHome(content);
