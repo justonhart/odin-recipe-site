@@ -69,15 +69,12 @@ img{
 }
 
 .foodCard{	
-	border-radius:8px;
 	background-color: #86815d;
 	color: #dfdfdf;
 	width: min-content;
 }
 
 .foodCard img{
-	border-top-left-radius: 8px;
-	border-top-right-radius: 8px;
 	max-width: 15vw;
 }
 
