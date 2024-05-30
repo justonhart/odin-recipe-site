@@ -5,9 +5,13 @@ html, body{
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+h1, h2, h3{
+	margin: 0;
+}
+
 body {
-	background-color:#262626;
-	color: #d2d2d2;
+	background-color:#2b2b2b;
+	color: #c6c1b3;
 	display: flex;
 	flex-direction: column;
 	justify-content:space-between;
@@ -43,11 +47,12 @@ footer{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	gap: 2rem;
 }
 
-.card{
+.mainCard{
 	padding: 1rem;
-	border: 1px solid #cccccc;
+	border: 1px solid #86815d;
 	display: flex;
 	width: max-content;
 	gap: 2rem;
@@ -56,4 +61,32 @@ footer{
 
 img{
 	max-width: 30vw;
+}
+
+.flexRow{
+	display: flex;
+	gap: 4vw;
+}
+
+.foodCard{	
+	border-radius:8px;
+	background-color: #86815d;
+	color: #dfdfdf;
+	width: min-content;
+}
+
+.foodCard img{
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	max-width: 15vw;
+}
+
+.foodCardText{
+	text-align: center;
+	font-size: 115%;
+	padding: 1rem;
+}
+
+.shadowed{
+	box-shadow: 0px 7px 5px -2px rgba(0,0,0,0.65);
 }
