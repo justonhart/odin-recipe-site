@@ -1,15 +1,24 @@
 import img from './img/brick-wall.jpg';
 
 export default function renderHome(content){
-	let card = document.createElement('div');
+	content.innerHTML = '';
+
+	const header = document.createElement('h1');
+	header.innerText = 'Odin Restaurant';
+	header.id = 'siteHeader';
+	content.appendChild(header);
+
+	const card = document.createElement('div');
 	card.classList.add('card');
-	card.innerText = 'This is a blurb about my restaurant';
 	
+	const blurb = document.createElement('p');
+	blurb.innerText = 'This is a blurb about our cool restaurant!';
+	card.appendChild(blurb);
+
 	const myImage = new Image();
 	myImage.src = img;
 	card.appendChild(myImage);
 
-	content.innerHTML = '';
 	content.appendChild(card);
 
 };
